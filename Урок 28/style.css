@@ -1,0 +1,56 @@
+/* .text {
+    font-family: "Montserrat", sans-serif;
+    font-style:italic;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 00;
+} */
+.text {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-variation-settings:
+        "wdth"100;  
+}
+.text-2 {
+    text-decoration: line-through;
+}
+.text-3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.text-4 {
+
+    text-decoration: overline;
+    text-decoration-line: wavy;
+    text-decoration-style: wavy;
+    text-decoration-thickness: wavy;
+    text-shadow:3px 1px 3px     #870091;
+    word-spacing: 30px;
+}   
+
+.text-5 {
+    text-decoration:    underline;
+    text-decoration-style: double ;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
