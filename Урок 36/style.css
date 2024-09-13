@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+.block {
+    border: 1px solid #000; 
+    opacity:.8 ;
+    border-radius: 20px 0 0 20px;   
+    height: 500px;
+    overflow: auto;
+    background: #d5eced;
+}
+
+.block-1 {
+    box-shadow: inset 0 0 8px;
+    /* opacity: 0.8; */
+    padding: 20px;
+    margin: 7px;
+    display: inline-block;
+background: hsl(38, 55%, 56%);
+border: 1px solid #000;
+border-radius: 25px;
+width: 300px;
+height: 225px;
+}   
