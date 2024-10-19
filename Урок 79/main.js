@@ -36,4 +36,4 @@ if( age >= 18 ) {
 
 
 const myAge = 16
-myAge === 18 ? console.log('Вы совершеннолетний') : console.log('Вы не совершеннолетний');
+myAge >= 18 ? console.log('Вы совершеннолетний') : console.log('Вы не совершеннолетний');
