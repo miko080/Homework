@@ -1,0 +1,58 @@
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+
+:root {
+    --accent-color: #191614;
+    --general-bg: #100F0E;
+    --brown-text: #C7A78A;
+    --hover-text: #9A816B;
+}
+
+.header {
+    gap: 15px;
+    background: var(--general-bg);
+}
+
+.header__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--accent-color);
+}
+
+
+.header__logo {
+    margin-left: 65px;
+    margin-top: 32px;
+    margin-bottom: 115px;
+}
+
+.header__text {
+    background: var(--brown-text);
+}
+.header__title {
+    /* margin-left: 65px; */
+}
+
+.header__title span{
+    /* background: var(--brown-text); */
+}
+
+.title {
+}
+.header__text-2 {
+}
+.button {
+    padding: 25px 85px 26px 35px;
+    height: 69px;
+}
+.header__img-girl {
+    justify-self: end;
+    margin-top: -56%;
+}
+.header__img-burger {
+}
+.header__tel {
+}
+.header__tel-icon {
+}
