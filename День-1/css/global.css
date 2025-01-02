@@ -1,0 +1,122 @@
+body {
+  font-family: 'GothamBlack', 'SUSE', 'Arial', sans-serif;
+  background: var(--accent-color);
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 1350px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main {
+  flex-grow: 1;
+  background: #d9d9d903;
+}
+
+.title {
+  font-size: 53px;
+  line-height: 59px;
+}
+
+
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 293px;
+  height: 69px;
+  border-radius: 60px;
+  background: var(--brown-text);
+  font-family: 'SUSE';
+font-size: 14px;
+text-transform: uppercase;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: .23em;
+color: var(--accent-color);
+transition: var(--transition);
+}
+
+.button:hover {
+  background: var(--hover-effect);
+}
+
+.button img {
+  margin-left: 40px;
+}
+
+.title span {
+  color: var(--brown-text);
+}
+
+.subtitle {
+  color: var(--brown-text);
+font-family: 'SUSE';
+font-weight: 700;
+line-height: 20px;
+letter-spacing: .6em;
+}
+
+.cansel {
+  position: absolute;
+  top: 0;
+  left: 71%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0px;
+  max-width: 80px;
+  height: 115px;
+  border-radius: 0px 0px 90px 90px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.13);
+  background: var(--accent-color);
+  transition: var(--transition);
+}
+
+.cansel img {
+  width: 29.02px;
+  height: 29.02px;
+}
+
+.cansel:hover {
+  background: #000;
+}
+
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="time"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-text {
+    opacity: 0;
+}
