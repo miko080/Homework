@@ -1,0 +1,97 @@
+
+.harmony {
+  margin-bottom: 80px;
+}
+
+
+
+.harmony__inner {
+  background: url(../img/harmony-bg.png) 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1320px;
+  min-height: 438px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.harmony__title {
+  margin-bottom: 35px;
+  text-align: center;
+  max-width: 750px;
+}
+
+.harmony__subtitle {
+  font-family: 'SUSE';
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+
+/* ================================= */
+
+.instructors {
+  margin-bottom: 75px;
+}
+
+.instructors__head {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.instructors__title {
+  max-width: 475px;
+  margin-bottom: 65px;
+}
+
+.head-span {
+  max-width: 700px;
+}
+
+.instructors__info {
+  display: flex;
+  gap: 20px;
+}
+
+.instructors__card {
+  max-width: 430px;
+  border-radius: 10px;
+  background: #100f0e;
+  padding: 0 35px;
+}
+
+.instructors__photo {
+  display: flex;
+  justify-content: start;
+  margin: 28px 0 35px;
+}
+
+.instructors__name {
+  color: var(--brown-text);
+  font-family: 'GothamBlack';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.instructors__description {
+  font-family: 'SUSE';
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 45px;
+  max-width: 356px;
+}
+
+.descriptions {
+  margin-bottom: 65px;
+}
+
+.instructors__socials {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
