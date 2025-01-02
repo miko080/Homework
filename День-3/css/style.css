@@ -1,0 +1,759 @@
+@import "fonts.css";
+@import "reset.css";
+@import "header.css";
+@import "global.css";
+@import "modal-burger.css";
+@import "harmony-discover.css";
+
+:root {
+  --body-bg: #d9d9d903;
+  --accent-color: #191614;
+  --general-bg: #100F0E;
+  --brown-text: #C7A78A;
+  --hover-effect: #9A816B;
+  --transition: all .3s;
+  --index: calc(1vw + 1vh)
+}
+
+/* ===================== */
+
+.club {
+  margin-bottom: 65px;
+  background: #100F0E;
+  padding-top: 80px;
+}
+
+.club__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.club__inner img {
+  margin-bottom: 85px;
+}
+
+.club__title {
+  max-width: 320px;
+}
+
+.club__text {
+  max-width: 380px;
+  font-family: 'SUSE';
+  font-size: 20px;
+  line-height: 25px;
+}
+
+
+/* ================================= */
+/* ================================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  background: #000000a7;
+  transition: all 1.5s;
+  transform: translateY(-100%);
+  overflow: hidden;
+}
+
+.modal--opened {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  overflow-y: auto;
+}
+
+.modal__window {
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+
+.modal__head {
+  padding-left: 65px;
+  background: url(../img/header-hero/modal-bg.png) 0% 50% / cover;
+  background-repeat: no-repeat;
+}
+
+.modal__cansel {
+  left: 81%;
+}
+
+.modal__cansel img {
+  pointer-events: none;
+}
+
+.modal__title {
+  max-width: 700px;
+  padding-bottom: 150px;
+  margin-bottom: 0;
+}
+
+.modal__subtitle {
+  padding-top: 120px;
+  margin-left: 4px;
+  margin-bottom: 15px;
+}
+
+.modal__info {
+  padding-top: 45px;
+  background: var(--brown-text);
+}
+
+.modal__form {
+  margin: 0 70px;
+  padding-bottom: 30px;
+}
+
+
+
+
+/* ================================= */
+/* ================================= */
+
+
+@media (max-width:1250px) {
+
+  .discover__img {
+    display: none;
+  }
+
+  .discover__first-row,
+  .discover__second-row {
+    gap: 100px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .item {
+    max-width: 470px;
+    width: 100%;
+    height: 340px;
+  }
+
+  .discover__text {
+    max-width: 420px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width:1200px) {
+
+  .header__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__content {
+    display: contents;
+    position: static;
+    justify-content: start;
+  }
+
+  .header__info {
+    text-align: center;
+    position: relative;
+  }
+
+  .header__contact {
+    width: 100%;
+  }
+
+  .header__button {
+    margin: 0 auto 70px;
+  }
+
+  .header__text {
+    margin: 0 auto 70px;
+  }
+
+
+  .header__title {
+    max-width: none;
+  }
+
+  /* ================== */
+
+  .club__inner {
+    display: block;
+    text-align: center;
+  }
+
+  .club__title {
+    margin: 0 auto 30px;
+    max-width: 500px;
+  }
+
+  .club__text {
+    margin: 0 auto 30px;
+    max-width: 550px;
+  }
+}
+
+@media (max-width:1100px) {
+  .modal__head {
+    background-position: 80% 50%;
+  }
+
+  /* ========== */
+
+  .head-span {
+    max-width: 550px;
+  }
+
+}
+
+@media (max-width:1000px) {
+  .header__title {
+    font-size: 66px;
+  }
+
+  .header__subtitle {
+    font-size: 14px;
+  }
+
+  .header__text {
+    font-size: 18px;
+  }
+
+  /* ======================== */
+
+  .burger__window {
+    max-height: 500px;
+    border-radius: 60px 0px 0px 220px;
+  }
+
+  .burger__list {
+    padding: 150px 60px 180px;
+  }
+
+  .burger__list span {
+    margin-bottom: 15px;
+  }
+
+  .burger__item {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .cansel {
+    height: 90px;
+    max-width: 70px;
+  }
+
+  .cansel img {
+    width: 20px;
+  }
+
+  /* ====================== */
+
+  .modal__title {
+    font-size: 60px;
+    padding-bottom: 70px;
+  }
+
+  .modal__subtitle {
+    margin-bottom: 10px;
+    line-height: 10px;
+  }
+
+  /* ================= */
+
+  .discover__head {
+    gap: 35px;
+  }
+
+  .head-span {
+    max-width: 400px;
+  }
+
+  .discover__first-row,
+  .discover__second-row {
+    gap: 45px;
+  }
+
+  .discover__text {
+    max-width: 370px;
+  }
+}
+
+@media (max-width:850px) {
+  .head-span {
+    display: none;
+  }
+
+  /* ================ */
+
+  .harmony__title {
+    font-size: 44.5px;
+  }
+}
+
+@media (max-width:750px) {
+  .header__title {
+    font-size: 58px;
+    margin-bottom: 34px;
+  }
+
+  .header__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .header__text {
+    margin-bottom: 40px;
+  }
+
+  .header__button {
+    margin-bottom: 45px;
+  }
+
+  .header__burger {
+    max-width: 80px;
+    min-height: 110px;
+  }
+
+  .header__contact {
+    width: 100%;
+    max-width: 450px;
+    gap: 10px;
+    min-height: 70px;
+    margin: 0 auto;
+  }
+
+  .header__num {
+    letter-spacing: normal;
+    font-size: 15px;
+  }
+
+  .header__num span {
+    font-size: 15px;
+  }
+
+  /* ======================= */
+
+  .burger__window {
+    max-height: 700px;
+    border-radius: 60px 0px 0px 190px;
+  }
+
+  .burger__list {
+    padding: 120px 30px 180px;
+  }
+
+  .burger__item {
+    max-width: 250px;
+  }
+
+  /* ======================= */
+
+  .modal__info {
+    padding-top: 15px;
+  }
+
+  .modal__title {
+    font-size: 45px;
+    padding-bottom: 50px;
+  }
+
+  .castom__span {
+    top: 8px;
+    left: 32.5px;
+  }
+
+  .label span {
+    top: 8px;
+    left: 32.5px;
+  }
+  
+  .input {
+    padding: 25px 0 10px 30px;
+  }
+  
+  .castom__placeholder {
+    left: 32.5px; 
+    top: 32px;
+  }
+
+  /* ==================== */
+
+  .discover__first-row,
+  .discover__second-row {
+    gap: 25px;
+  }
+
+  .item {
+    max-width: 450px;
+  }
+
+  .discover__title {
+    margin-bottom: 20px;
+  }
+
+  .discover__text {
+    margin-bottom: 30px;
+  }
+
+  .discover__card-text {
+    margin-bottom: 45px;
+  }
+
+  .discover__button {
+    padding-bottom: 0;
+  }
+
+}
+
+@media (max-width:700px) {
+
+  .discover__item-img img {
+    width: 26px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width:600px) {
+
+  .modal__info {
+    padding-top: 35px;
+  }
+
+  .modal__head {
+    text-align: center;
+    background-position: 80% 0%;
+  }
+
+  .modal__title {
+    font-size: 65px;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 35px 80px;
+    line-height: 59px;
+  }
+
+  .modal__subtitle {
+    padding-top: 150px;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+
+  /* ==================== */
+
+  .club__title {
+    font-size: 40px;
+  }
+
+  .club__text {
+    font-size: 14px;
+  }
+
+  /* =============== */
+
+  .discover__title {
+    font-size: 20px;
+  }
+
+  .discover__text {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  .discover__card-text {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width:550px) {
+  .header__title {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  .header__text {
+    font-size: 14px;
+    max-width: 450px;
+  }
+
+  .header__subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .header__burger {
+    max-width: 70px;
+    min-height: 95px;
+  }
+
+  .header__burger span {
+    width: 35px;
+  }
+
+  .header__burger span::after {
+    width: 25px;
+    right: 11px;
+  }
+
+  .header__burger span::before {
+    width: 25px;
+  }
+
+  .header__logo img{
+    max-width: 125px;
+  }
+
+  .header__logo {
+    margin-bottom: 60px;
+  }
+
+  /* =============== */
+
+  .burger__list span {
+    margin-bottom: 20px;
+  }
+
+  .burger__item {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* =================== */
+
+  .input__icons img {
+    right: 25px;
+  }
+
+  .label img {
+    right: 30px;
+  }
+
+  .modal__button {
+    max-width: 400px;
+  }
+
+  .modal__button img {
+    margin-left: 100px;
+  }
+
+  /* ==================== */
+
+  .discover__head-title {
+    font-size: 45px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .discover__first-row,
+  .discover__second-row {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .item {
+    height: 250px;
+    margin-bottom: 30px;
+  }
+
+  .discover__card-text {
+    margin-bottom: 20px;
+  }
+
+  /* ================= */
+
+  .harmony__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width:500px) {
+  .header__num {
+    display: none;
+  }
+
+  .header__contact {
+    background: none;
+  }
+
+  .header__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .header__subtitle {
+    font-size: 12px;
+  }
+
+  .header__text {
+    max-width: 300px;
+  }
+
+  .header__button {
+    margin: 0 0 30px;
+    max-width: 220px;
+    font-size: 12px;
+    min-height: 55px;
+  }
+
+  .header__button img {
+    width: 13px;
+    margin-left: 20px;
+  }
+
+  .header__tel {
+    max-width: 85px;
+    height: 68px;
+    position: absolute;
+    bottom: 105px;
+    right: 20px;
+  }
+
+  .header__tel img {
+    width: 30px;
+  }
+
+  /* ======================= */
+
+  .burger__window {
+    max-height: 550px;
+  }
+
+  /* ============================= */
+
+  .modal__title {
+    font-size: 52px;
+    margin-right: 50px;
+    padding: 0 0 80px;
+  }
+
+  .input::placeholder {
+    font-size: 15px;
+  }
+
+  .castom__span {
+    font-size: 8px;
+    top: 12px;
+  }
+
+  .castom__placeholder {
+    font-size: 14px;
+    top: 35px;
+  }
+
+  .label span {
+    font-size: 8px;
+    top: 10px;
+  }
+
+  /* ======================= */
+
+  .club__inner img {
+    width: 100%;
+  }
+
+  /* ========================= */
+
+  .discover__head-title {
+    font-size: 42px;
+  }
+
+  .discover__title {
+    margin-bottom: 10px;
+  }
+
+  .discover__card-text {
+    margin-bottom: 30px;
+  }
+
+  /* =============== */
+
+  .harmony__inner {
+    background-position: 4% 50%;
+  }
+
+}
+
+@media (max-width:430px) {
+
+  .modal__head {
+    padding-top: 20px;
+  }
+
+  .modal__subtitle {
+    margin-left: -40px;
+    padding-top: 100px;
+  }
+
+  .input__date-label img {
+    display: none;
+  }
+
+  .input__time-label img {
+    display: none;
+  }
+
+  .input__number-label img {
+    display: none;
+  }
+
+  .input__email-label img {
+    display: none;
+  }
+
+  .input__text-label img {
+    display: none;
+  }
+
+  .input__type-label img {
+    display: none;
+  }
+
+  .modal__button {
+    font-size: 12px;
+    margin-top: 25px;
+  }
+
+  .modal__button img {
+    margin-left: 30px;
+    width: 12px;
+  }
+
+  /* ================= */
+
+  .item {
+    height: 270px;
+  }
+
+  /* ================ */
+
+  .harmony__inner {
+    min-height: 390px;
+  }
+
+  .harmony__subtitle {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .harmony__button {
+    max-width: 220px;
+    min-height: 55px;
+    font-size: 12px;
+  }
+
+  .harmony__button img {
+    width: 11px;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width:380px) {
+  .harmony__inner {
+    background: url(../img/harmony-bg-mobail.png) no-repeat;
+  }
+}
