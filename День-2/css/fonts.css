@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'SUSE';
+    src: url('../fonts/SUSE-Regular.woff2') format('woff2'),
+        url('../fonts/SUSE-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'GothamBlack';
+  src: url('../fonts/GothamBlack.woff2') format('woff2'),
+      url('../fonts/GothamBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUSE';
+    src: url('../fonts/SUSE-Bold.woff2') format('woff2'),
+        url('../fonts/SUSE-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
